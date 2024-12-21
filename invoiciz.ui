@@ -1,0 +1,2428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1288</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+height : 41;
+background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 64);
+border : 0px;
+font: 57 14pt &quot;Roboto Medium&quot;;
+border-radius : 8px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="nav_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#nav_frame{
+background-color: rgb(255, 255, 255);
+border-bottom : 1px solid #404040;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>671</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>671</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>671</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">display: flex;
+align-items: center;
+gap: 30px;
+align-self: stretch;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>30</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>68</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>68</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Roboto</family>
+            <pointsize>-1</pointsize>
+            <weight>62</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #9747FF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+          </property>
+          <property name="text">
+           <string>Invoiciz</string>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_4">
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="maximumSize">
+           <size>
+            <width>900</width>
+            <height>34</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">display: inline-flex;
+align-items: center;
+gap: 16px;
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0">
+           <property name="spacing">
+            <number>16</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="font">
+              <font>
+               <family>Roboto</family>
+               <pointsize>-1</pointsize>
+               <weight>62</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">.QPushButton{
+color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+background: #9747FF;
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.QPushButton::hover {
+background-color: rgb(94, 44, 159);
+}</string>
+             </property>
+             <property name="text">
+              <string>Dashboard</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">.QPushButton{
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.QPushButton::hover{
+color : #000;
+border-bottom : 1px solid #000;
+border-radius : 0px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Create Invoice</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="styleSheet">
+              <string notr="true">.QPushButton{
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.QPushButton::hover{
+color : #000;
+border-bottom : 1px solid #000;
+border-radius : 0px;
+}</string>
+             </property>
+             <property name="text">
+              <string>History</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="styleSheet">
+              <string notr="true">.QPushButton{
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.QPushButton::hover{
+color : #000;
+border-bottom : 1px solid #000;
+border-radius : 0px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Products</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="styleSheet">
+              <string notr="true">.QPushButton{
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.QPushButton::hover{
+color : #000;
+border-bottom : 1px solid #000;
+border-radius : 0px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Customers</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="stacked">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="dashboard_page">
+          <widget class="QFrame" name="frame_2">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>50</y>
+             <width>190</width>
+             <height>97</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 190px;
+height: 97px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #9747FF;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_3">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>50</y>
+             <width>190</width>
+             <height>97</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 190px;
+height: 97px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #EEE;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_4">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>50</y>
+             <width>190</width>
+             <height>97</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 190px;
+height: 97px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #EEE;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_5">
+           <property name="geometry">
+            <rect>
+             <x>720</x>
+             <y>50</y>
+             <width>190</width>
+             <height>97</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 190px;
+height: 97px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #EEE;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_7">
+           <property name="geometry">
+            <rect>
+             <x>940</x>
+             <y>50</y>
+             <width>190</width>
+             <height>97</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>97</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">width: 190px;
+height: 97px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #EEE;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="invoices_page">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>12</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="maximumSize">
+                    <size>
+                     <width>127</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                   </property>
+                   <property name="text">
+                    <string>Customer Informations</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>92</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Company Name :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="companyName_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <widget class="QLabel" name="label_19">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>50</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Phone :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="companyPhone_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label_20">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>50</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Address :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="companyAddress_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="type_comboBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <property name="topMargin">
+                  <number>8</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="maximumSize">
+                    <size>
+                     <width>118</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                   </property>
+                   <property name="text">
+                    <string>Products Information</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QLabel" name="label_14">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>92</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Product Name :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="productName_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="label_21">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>51</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Quantity :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="productQuantity_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="label_22">
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>50</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Price :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="productPrice_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="addButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>-1</pointsize>
+                     <weight>62</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+background: #9747FF;
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Product</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_12">
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Net Price :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="netPrice_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Discount :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="discount_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                     </property>
+                     <property name="text">
+                      <string>Total Price :</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="totalPrice_input">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                       <horstretch>247</horstretch>
+                       <verstretch>29</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7"/>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>18</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <property name="spacing">
+                    <number>8</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="saveInvoice_button">
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Roboto</family>
+                       <pointsize>-1</pointsize>
+                       <weight>62</weight>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#saveInvoice_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #0A9E5B;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#saveInvoice_button::hover{
+background-color: #0A9E5B;
+color: #fff;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Save Invoice</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="printInvoice_button">
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Roboto</family>
+                       <pointsize>-1</pointsize>
+                       <weight>62</weight>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#printInvoice_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #475CFF;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#printInvoice_button::hover{
+background-color: #475CFF;
+color: #fff;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Print Invoice</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="cancelInvoice_button">
+                     <property name="minimumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>247</width>
+                       <height>29</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Roboto</family>
+                       <pointsize>-1</pointsize>
+                       <weight>62</weight>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#cancelInvoice_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #FF0404;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#cancelInvoice_button::hover{
+background-color: #FF0404;
+color: #fff;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Delete Invoice</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QTableView" name="create_tableView">
+                 <property name="minimumSize">
+                  <size>
+                   <width>971</width>
+                   <height>311</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+          <zorder>label_5</zorder>
+          <zorder>line</zorder>
+          <zorder>label_10</zorder>
+          <zorder>label_11</zorder>
+          <zorder>label_12</zorder>
+          <zorder>netPrice_input</zorder>
+          <zorder>totalPrice_input</zorder>
+          <zorder>discount_input</zorder>
+          <zorder>create_tableView</zorder>
+          <zorder>label_6</zorder>
+          <zorder>line_2</zorder>
+          <zorder>saveInvoice_button</zorder>
+          <zorder>printInvoice_button</zorder>
+          <zorder>cancelInvoice_button</zorder>
+          <zorder>label_13</zorder>
+          <zorder>companyName_input</zorder>
+          <zorder>layoutWidget</zorder>
+          <zorder>layoutWidget_2</zorder>
+          <zorder>type_comboBox</zorder>
+          <zorder>layoutWidget_3</zorder>
+          <zorder>layoutWidget_4</zorder>
+          <zorder>layoutWidget_5</zorder>
+          <zorder>addButton</zorder>
+          <zorder>verticalSpacer</zorder>
+         </widget>
+         <widget class="QWidget" name="history_page">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_23">
+                   <property name="minimumSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>38</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 99px;
+height: 10px;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;</string>
+                   </property>
+                   <property name="text">
+                    <string>Type :</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="historyType_comboBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QLineEdit" name="historySearch_input">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>247</horstretch>
+                     <verstretch>29</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="historySearch_Button">
+                   <property name="minimumSize">
+                    <size>
+                     <width>40</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>-1</pointsize>
+                     <weight>62</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+background: #9747FF;
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Search</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableView" name="history_tableView"/>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteInvoice_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#deleteInvoice_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #FF0404;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#deleteInvoice_button::hover{
+background-color: #FF0404;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Delete Invoice</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="editInvoice_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#editInvoice_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #000;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#editInvoice_button::hover{
+background-color: #000;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Edit Invoice</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="products_page">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <item>
+                  <widget class="QLineEdit" name="productSearch_input">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>247</horstretch>
+                     <verstretch>29</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="productSearch_Button">
+                   <property name="minimumSize">
+                    <size>
+                     <width>40</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>-1</pointsize>
+                     <weight>62</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+background: #9747FF;
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Search</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableView" name="tableView_3"/>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addProduct_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#addProduct_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+color: #fff;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+	background-color: rgb(151, 71, 255);
+}
+
+#addProduct_button::hover{
+background-color: rgb(94, 44, 159);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Add Product</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteProduct_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#deleteProduct_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #FF0404;
+color: #FF0404;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#deleteProduct_button::hover{
+background-color: #FF0404;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Delete Product</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="editProduct_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#editProduct_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #000;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#editProduct_button::hover{
+background-color: #000;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Edit Product</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="customers_page">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <property name="spacing">
+            <number>8</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item>
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QLineEdit" name="cutomersSearch_input">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>247</horstretch>
+                     <verstretch>29</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>247</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">width: 247px;
+height: 29px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #404040;
+background: #FFF;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="customersSearch_Button">
+                   <property name="minimumSize">
+                    <size>
+                     <width>40</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Roboto</family>
+                     <pointsize>-1</pointsize>
+                     <weight>62</weight>
+                     <italic>false</italic>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+background: #9747FF;
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Search</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTableView" name="tableView_4"/>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_23">
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addCustomer_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#addCustomer_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+color: #fff;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+	background-color: rgb(151, 71, 255);
+}
+
+#addCustomer_button::hover{
+background-color: rgb(94, 44, 159);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Add Customer</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteCustomer_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#deleteCustomer_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #FF0404;
+color: #FF0404;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#deleteCustomer_button::hover{
+background-color: #FF0404;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Delete Customer</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="editCustomer_button">
+                 <property name="minimumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>247</width>
+                   <height>29</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>-1</pointsize>
+                   <weight>62</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">#editCustomer_button{
+display: flex;
+width: 212px;
+height: 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid #000;
+color: #404040;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#editCustomer_button::hover{
+background-color: #000;
+color: #fff;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Edit Customer</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
